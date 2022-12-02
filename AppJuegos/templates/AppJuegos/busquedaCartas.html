@@ -1,0 +1,25 @@
+{% extends "AppJuegos/padre.html" %}
+
+{% load static %}
+
+
+{% block titulo %}
+<h1 class="mb-5">Busqueda de cartas</h1>
+{% endblock %}
+
+
+
+{% block contenido_que_cambia %}
+
+<div style="margin: 20px auto;">
+<form style= "text-align: center" action="{% url 'buscar' %}" method="GET">
+
+    <input type="text" name="Nombrejuego" id="Nombrejuego">
+ 
+    <input  type="submit" value="buscar carta">
+
+</form>
+</div>
+<div style= "text-align: center">{{ mensaje }}</div>
+
+{% endblock %}

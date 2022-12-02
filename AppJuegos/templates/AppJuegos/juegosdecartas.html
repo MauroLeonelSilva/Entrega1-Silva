@@ -1,0 +1,21 @@
+{% extends "AppJuegos/padre.html" %}
+
+{% load static %}
+
+{% block titulo %}
+<h1 class="mb-5">Juegos de Cartas</h1>
+{% endblock %}
+
+{% block contenido_que_cambia %}
+
+
+<form action="{% url 'juegosdecartas' %}" method="POST">{% csrf_token %}
+    <table style="margin: 20px auto;">
+        {{ form.as_table }}
+    </table>
+    <div style= "text-align: center">
+    <p><input type="submit" value="Enviar"></p>
+    </div>
+    </form>
+
+{% endblock %}

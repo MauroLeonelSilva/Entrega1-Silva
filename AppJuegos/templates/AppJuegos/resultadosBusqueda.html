@@ -1,0 +1,28 @@
+{% extends "AppJuegos/padre.html" %}
+
+{% load static %}
+
+
+{% block titulo %}
+<h1 class="mb-5">Resultados de la busqueda</h1>
+{% endblock %}
+
+
+
+{% block contenido_que_cambia %}
+
+{% if cartas %}
+<ul>
+{% for carta in cartas %}
+        <li><p> {{ carta.Nombrejuego }} </p></li>    
+        <li><p> {{ carta.Nombrecarta }} </p></li>
+        <li><p> {{ carta.Rareza }} </p></li>
+        <br>
+{% endfor %}
+</ul>
+{% else %}
+<p>no hay cartas de ese juego</p>
+
+{% endif %}
+
+{% endblock %}

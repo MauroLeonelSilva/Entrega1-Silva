@@ -1,0 +1,22 @@
+{% extends "AppJuegos/padre.html" %}
+
+{% load static %}
+
+{% block titulo %}
+<h1 class="mb-5">Videojuegos</h1>
+{% endblock %}
+
+{% block contenido_que_cambia %}
+
+<form action="{% url 'videoJuegos' %}" method="POST">{% csrf_token %}
+    <table style="margin: 20px auto;">
+        {{ form.as_table }}
+    </table>
+    <div style= "text-align: center">
+    <p><input type="submit" value="Enviar"></p>
+    </div>
+    </form>
+
+<div>{{ mensaje }}</div>
+
+{% endblock %}
