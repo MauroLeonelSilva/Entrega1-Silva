@@ -10,4 +10,4 @@ el segundo boton tiene la funcion de buscar cartas dependiendo del juego al que 
 
 el tercer boton (juegos de mesa): es para subir a una base de datos juegos de mesa, que incluye: el nombre del juego, por ejemplo: "TEG" que tipo de juego es, por ejemplo:"estrategia" y la cantidad de jugadores que pueden jugar
 
-y el 4to y último boton tiene u
+y el 4to y último boton tiene un formulario subir en una base de datos videojuegos, que incluyen: nombre del juego una calificación y el género del mismo
